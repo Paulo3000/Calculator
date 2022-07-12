@@ -1,0 +1,25 @@
+#ResponsavelPeloRadioButton{
+
+background-color:#025E73;
+border-radius: 5px;
+color: white;
+width: 500px;
+margin-left: 2rem;
+}
+p{
+    background-color:  #F2A71B;;
+    color: black;
+ 
+}
+#RegisterAndCleener, #RegisterAndCleener2{
+    margin-left: 20px;
+}
+input , h3{
+    margin-left: 15px;
+    margin-top: 10px;
+    
+}
+button{
+    background-color: #F2A71B;
+    
+}
