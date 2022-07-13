@@ -15,8 +15,6 @@
 
 <body>
 
- 
-  
 
   <br>
 <div id="ResponsavelPeloRadioButton">
@@ -31,11 +29,10 @@
   <input type="number" id="RegisterAndCleener2" value="Enviar"> <button type="button" id="btnsoma" onclick="funtionStart()">=</button>
   <br> <br>
   <p id="Result"> Result</p>
+  
+  <textarea id="tab" name="w3review" rows="12" cols="50"></textarea>
 </div>
 
-  <!-- <button type="button" id="btnsoma" onclick="funtionStart()">TOTAL</button> -->
-
-  <!-- <p id="Result">Result</p> -->
 
 
   <script>
@@ -54,8 +51,7 @@
 
       if (box01.checked) {
         document.getElementById("Result").innerHTML = myFunctionMultiplicacao(transformaNum1, transformaNum2);
-
-
+        document.getElementById("tab").innerHTML =myTabuada(transformaNum1);
 
       }
       else if (box02.checked) {
@@ -84,6 +80,18 @@
     }
     function myFunctionDivisao(x, y) {
       return 'Re:  '+ ( x / y);
+    }
+    function myTabuada(x){
+      const vet =[];
+      var texto ="";
+     
+      for(var i =0; i<=10;i++){
+         vet[i] = x*i;
+         texto += x + " x "+ i +" = "+vet[i]+"\n";
+       
+      }
+      // return x +" x "+i+" = " +texto;
+      return texto;
     }
 
 
